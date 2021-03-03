@@ -1,7 +1,15 @@
-Two Approaches :
+ Approaches :
 
 1) Using a custom python function ( DB credentials can be pulled from some kind of vault without hardcoding )
-2) Using Distributed computing li
+2) Using Distributed computing like spark on EMR (preferred)
+3) AWS glue can be used to load the data plus it can also be used for orchestration
+4) Database objects can be migrated using jenkins \flyway(we use it in our current project)
+
+I am using approach 1 becuase i am running locally with only python on my machine
+  1) import the json files to staging table without flattening
+  2) Once the data is loaded into staging table you can create a view to flattern it. (just like snowflake)
+  3) Once the data is flattened you can insert or update the data into final consumption table
+
 
 Using any one of the above approaches we can do 2 things 
 
