@@ -1,6 +1,6 @@
 # This Function will accept the database name,schema_table_name and file path  . This can be modified to read from s3
 # This Function will load json files into postgress db
-# load_json_file_to_postgres('data_balm_cleanser', 'public.jgali3_assignment','/Users/jgali3/Downloads/jp','Y')
+# #  Usage load_json_file_to_postgres('data_balm_cleanser', 'public.jgali3_assignment','/Users/jgali3/Downloads/jp','Y')
 # Replace DB credentials line 10-12
 
 
