@@ -50,8 +50,8 @@ select
 	sample_data::json ->> 'contact_email'::text as contact_email,
 	sample_data::json ->> 'order_status_url'::text as order_status_url,
 	sample_data::json ->> 'line_items'::text as line_items,
-  sample_data::json ->> 'total_discount'::text as total_discount,
-	load_timestamp_epoc as last_modified
+  	sample_data::json ->> 'total_discount'::text as total_discount,
+	load_timestamp as load_timestamp
 from
 	public.jgali3_assignment;
    
